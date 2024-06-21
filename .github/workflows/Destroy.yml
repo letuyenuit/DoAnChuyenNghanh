@@ -1,71 +1,83 @@
 name: Destroy
 
-on: workflow_dispatch
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
 env:
   AWS_REGION: us-east-1
 
 jobs:
-  Destroy_ECS:
-    name: Destroy ECS
+  Test_Destroy:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        service:
-          [
-            "iac/ecs-service/reactjs",
-            "iac/ecs-service/netcore",
-            "iac/ecs-service/nodejs",
-          ]
     steps:
       - name: Code checkout
         uses: actions/checkout@v4
 
-      - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v3
-        with:
-          cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
+      - name: Test
+        run: echo "Destroying"
+  # Destroy_ECS:
+  #   name: Destroy ECS
+  #   runs-on: ubuntu-latest
+  #   strategy:
+  #     matrix:
+  #       service:
+  #         [
+  #           "iac/ecs-service/reactjs",
+  #           "iac/ecs-service/netcore",
+  #           "iac/ecs-service/nodejs",
+  #         ]
+  #   steps:
+  #     - name: Code checkout
+  #       uses: actions/checkout@v4
 
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@0e613a0980cbf65ed5b322eb7a1e075d28913a83
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ env.AWS_REGION }}
+  #     - name: Setup Terraform
+  #       uses: hashicorp/setup-terraform@v3
+  #       with:
+  #         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
-      - name: PWD
-        run: |
-          ls -al
-          pwd
+  #     - name: Configure AWS credentials
+  #       uses: aws-actions/configure-aws-credentials@0e613a0980cbf65ed5b322eb7a1e075d28913a83
+  #       with:
+  #         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  #         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  #         aws-region: ${{ env.AWS_REGION }}
 
-      - name: Terraform Destroy ECS service
-        run: |
-          terraform -chdir=${{ matrix.service }} init
-          terraform -chdir=${{ matrix.service }} destroy -auto-approve
+  #     - name: PWD
+  #       run: |
+  #         ls -al
+  #         pwd
 
-  Infrastructure_Destroy:
-    name: Infrastructure_Destroy
-    needs: [Destroy_ECS]
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        tf_module: ["ecr", "vpc", "iam", "ecs-cluster"]
-    steps:
-      - name: Code checkout
-        uses: actions/checkout@v4
+  #     - name: Terraform Destroy ECS service
+  #       run: |
+  #         terraform -chdir=${{ matrix.service }} init
+  #         terraform -chdir=${{ matrix.service }} destroy -auto-approve
 
-      - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v3
-        with:
-          cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
+  # Infrastructure_Destroy:
+  #   name: Infrastructure_Destroy
+  #   needs: [Destroy_ECS]
+  #   runs-on: ubuntu-latest
+  #   strategy:
+  #     matrix:
+  #       tf_module: ["ecr", "vpc", "iam", "ecs-cluster"]
+  #   steps:
+  #     - name: Code checkout
+  #       uses: actions/checkout@v4
 
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@0e613a0980cbf65ed5b322eb7a1e075d28913a83
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ env.AWS_REGION }}
+  #     - name: Setup Terraform
+  #       uses: hashicorp/setup-terraform@v3
+  #       with:
+  #         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
-      - name: Terraform Destroy ${{ matrix.tf_module }}
-        run: |
-          terraform -chdir=iac/${{ matrix.tf_module }} init
-          terraform -chdir=iac/${{ matrix.tf_module }} destroy -auto-approve
+  #     - name: Configure AWS credentials
+  #       uses: aws-actions/configure-aws-credentials@0e613a0980cbf65ed5b322eb7a1e075d28913a83
+  #       with:
+  #         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  #         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  #         aws-region: ${{ env.AWS_REGION }}
+
+  #     - name: Terraform Destroy ${{ matrix.tf_module }}
+  #       run: |
+  #         terraform -chdir=iac/${{ matrix.tf_module }} init
+  #         terraform -chdir=iac/${{ matrix.tf_module }} destroy -auto-approve
