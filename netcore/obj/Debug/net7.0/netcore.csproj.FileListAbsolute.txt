@@ -1,0 +1,243 @@
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\appsettings.json
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\libman.json
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\netcore.staticwebassets.runtime.json
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\netcore.exe
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\netcore.deps.json
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\netcore.runtimeconfig.json
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\netcore.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\netcore.pdb
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\Azure.Core.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\BCrypt.Net-Next.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\Humanizer.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\LETUYEN\Desktop\icd\.net\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\LETUYEN\Desktop\icd\.net\obj\Debug\net7.0\netcore.csproj.AssemblyReference.cache
+C:\Users\LETUYEN\Desktop\icd\.net\obj\Debug\net7.0\netcore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LETUYEN\Desktop\icd\.net\obj\Debug\net7.0\netcore.AssemblyInfoInputs.cache
+C:\Users\LETUYEN\Desktop\icd\.net\obj\Debug\net7.0\netcore.AssemblyInfo.cs
+C:\Users\LETUYEN\Desktop\icd\.net\obj\Debug\net7.0\netcore.csproj.CoreCompileInputs.cache
+C:\Users\LETUYEN\Desktop\icd\.net\obj\Debug\net7.0\netcore.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\LETUYEN\Desktop\icd\.net\obj\Debug\net7.0\netcore.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\LETUYEN\Desktop\icd\.net\obj\Debug\net7.0\staticwebassets\msbuild.netcore.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\LETUYEN\Desktop\icd\.net\obj\Debug\net7.0\staticwebassets\msbuild.build.netcore.props
+C:\Users\LETUYEN\Desktop\icd\.net\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.netcore.props
+C:\Users\LETUYEN\Desktop\icd\.net\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.netcore.props
+C:\Users\LETUYEN\Desktop\icd\.net\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\LETUYEN\Desktop\icd\.net\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\LETUYEN\Desktop\icd\.net\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\LETUYEN\Desktop\icd\.net\obj\Debug\net7.0\scopedcss\bundle\netcore.styles.css
+C:\Users\LETUYEN\Desktop\icd\.net\obj\Debug\net7.0\netcore.csproj.CopyComplete
+C:\Users\LETUYEN\Desktop\icd\.net\obj\Debug\net7.0\netcore.dll
+C:\Users\LETUYEN\Desktop\icd\.net\obj\Debug\net7.0\refint\netcore.dll
+C:\Users\LETUYEN\Desktop\icd\.net\obj\Debug\net7.0\netcore.pdb
+C:\Users\LETUYEN\Desktop\icd\.net\obj\Debug\net7.0\netcore.genruntimeconfig.cache
+C:\Users\LETUYEN\Desktop\icd\.net\obj\Debug\net7.0\ref\netcore.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\appsettings.json
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\libman.json
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\netcore.staticwebassets.runtime.json
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\netcore.exe
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\netcore.deps.json
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\netcore.runtimeconfig.json
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\netcore.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\netcore.pdb
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\Azure.Core.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\BCrypt.Net-Next.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\Humanizer.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\obj\Debug\net7.0\netcore.csproj.AssemblyReference.cache
+C:\Users\LETUYEN\Desktop\icd\netcore\obj\Debug\net7.0\netcore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LETUYEN\Desktop\icd\netcore\obj\Debug\net7.0\netcore.AssemblyInfoInputs.cache
+C:\Users\LETUYEN\Desktop\icd\netcore\obj\Debug\net7.0\netcore.AssemblyInfo.cs
+C:\Users\LETUYEN\Desktop\icd\netcore\obj\Debug\net7.0\netcore.csproj.CoreCompileInputs.cache
+C:\Users\LETUYEN\Desktop\icd\netcore\obj\Debug\net7.0\netcore.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\LETUYEN\Desktop\icd\netcore\obj\Debug\net7.0\netcore.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\LETUYEN\Desktop\icd\netcore\obj\Debug\net7.0\staticwebassets\msbuild.netcore.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\LETUYEN\Desktop\icd\netcore\obj\Debug\net7.0\staticwebassets\msbuild.build.netcore.props
+C:\Users\LETUYEN\Desktop\icd\netcore\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.netcore.props
+C:\Users\LETUYEN\Desktop\icd\netcore\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.netcore.props
+C:\Users\LETUYEN\Desktop\icd\netcore\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\LETUYEN\Desktop\icd\netcore\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\LETUYEN\Desktop\icd\netcore\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\LETUYEN\Desktop\icd\netcore\obj\Debug\net7.0\scopedcss\bundle\netcore.styles.css
+C:\Users\LETUYEN\Desktop\icd\netcore\obj\Debug\net7.0\netcore.csproj.CopyComplete
+C:\Users\LETUYEN\Desktop\icd\netcore\obj\Debug\net7.0\netcore.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\obj\Debug\net7.0\refint\netcore.dll
+C:\Users\LETUYEN\Desktop\icd\netcore\obj\Debug\net7.0\netcore.pdb
+C:\Users\LETUYEN\Desktop\icd\netcore\obj\Debug\net7.0\netcore.genruntimeconfig.cache
+C:\Users\LETUYEN\Desktop\icd\netcore\obj\Debug\net7.0\ref\netcore.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\appsettings.json
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\libman.json
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\netcore.staticwebassets.runtime.json
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\netcore.exe
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\netcore.deps.json
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\netcore.runtimeconfig.json
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\netcore.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\netcore.pdb
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\Azure.Core.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\BCrypt.Net-Next.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\Humanizer.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\obj\Debug\net7.0\netcore.csproj.AssemblyReference.cache
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\obj\Debug\net7.0\netcore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\obj\Debug\net7.0\netcore.AssemblyInfoInputs.cache
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\obj\Debug\net7.0\netcore.AssemblyInfo.cs
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\obj\Debug\net7.0\netcore.csproj.CoreCompileInputs.cache
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\obj\Debug\net7.0\netcore.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\obj\Debug\net7.0\netcore.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\obj\Debug\net7.0\staticwebassets\msbuild.netcore.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\obj\Debug\net7.0\staticwebassets\msbuild.build.netcore.props
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.netcore.props
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.netcore.props
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\obj\Debug\net7.0\scopedcss\bundle\netcore.styles.css
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\obj\Debug\net7.0\netcore.csproj.CopyComplete
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\obj\Debug\net7.0\netcore.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\obj\Debug\net7.0\refint\netcore.dll
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\obj\Debug\net7.0\netcore.pdb
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\obj\Debug\net7.0\netcore.genruntimeconfig.cache
+C:\Users\LETUYEN\Desktop\DACN - Copy\netcore\obj\Debug\net7.0\ref\netcore.dll

@@ -1,0 +1,12 @@
+#SearchUser {
+  width: 400px;
+  height: 100%;
+  padding: 24px;
+  background-color: var(--bs-header-bg);
+}
+#serachUser {
+  font-size: 15px;
+}
+#searchbtnddon:hover {
+  background-color: var(--bs-btn-hover-bg);
+}
