@@ -1,6 +1,6 @@
 ༼ つ ｡◕‿‿◕｡ ༽つ
 
-## Overview Web Chat Application
+## Overview Web Chat Application.
 
 <a href="https://learn.microsoft.com/en-us/ef/core/">
     <img src = "https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white">
@@ -18,7 +18,7 @@
 
 ![alt text](<Screenshot 2024-06-10 114533.png>)
 
-## Auto Deployment using Terraform + Github Actions
+## Auto Deployment using Terraform + Github Actions.
 
 <ol>
     <li>Production flow: Build infrastructure, Test, Sonar scan, Quality gate checking, Deploy to ECS cluster</li>
