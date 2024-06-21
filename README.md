@@ -24,3 +24,8 @@
     <li>Production flow: Build infrastructure, Test, Sonar scan, Quality gate checking, Deploy to ECS cluster</li>
     <li>Destroy flow: Delete all resource</li>
 </ol>
+
+1. Production flow
+   ![alt text](<Screenshot 2024-06-22 034713.png>) ![alt text](<Screenshot 2024-06-22 034510.png>) ![alt text](<Screenshot 2024-06-22 034454.png>)
+2. Destroy flow
+   ![alt text](<Screenshot 2024-06-22 035201.png>)
