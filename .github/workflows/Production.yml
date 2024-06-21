@@ -43,6 +43,8 @@ jobs:
           dotnet test
 
   Sonarqube:
+    name: Sonarqube
+    needs: [Test]
     runs-on: ubuntu-latest
     defaults:
       run:
