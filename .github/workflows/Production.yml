@@ -142,12 +142,18 @@ jobs:
         if: ${{ matrix.folder == 'reactjs' }}
         run: |
           cd ${{ matrix.folder }}
-          sed -i 's/REACT_APP_FIREBASE_KEY=xxx/REACT_APP_FIREBASE_KEY=${{ secrets.REACT_APP_FIREBASE_KEY }}/g' Dockerfile
-          sed -i 's/REACT_APP_FIREBASE_DOMAIN=xxx/REACT_APP_FIREBASE_DOMAIN=${{ secrets.REACT_APP_FIREBASE_DOMAIN }}/g' Dockerfile
-          sed -i 's/REACT_APP_FIREBASE_PROJECT_ID=xxx/REACT_APP_FIREBASE_PROJECT_ID=${{ secrets.REACT_APP_FIREBASE_PROJECT_ID }}/g' Dockerfile
-          sed -i 's/REACT_APP_FIREBASE_STORAGE_BUCKET=xxx/REACT_APP_FIREBASE_STORAGE_BUCKET=${{ secrets.REACT_APP_FIREBASE_STORAGE_BUCKET }}/g' Dockerfile
-          sed -i 's/REACT_APP_FIREBASE_APP_ID=xxx/REACT_APP_FIREBASE_APP_ID=${{ secrets.REACT_APP_FIREBASE_APP_ID }}/g' Dockerfile
-          sed -i 's/REACT_APP_FIREBASE_BUCKET_URL=xxx/REACT_APP_FIREBASE_BUCKET_URL=${{ secrets.REACT_APP_FIREBASE_BUCKET_URL }}/g' Dockerfile
+          FIREBASE_KEY=${{ secrets.REACT_APP_FIREBASE_KEY }}
+          FIREBASE_DOMAIN=${{ secrets.REACT_APP_FIREBASE_DOMAIN }}
+          FIREBASE_PROJECT_ID=${{ secrets.REACT_APP_FIREBASE_PROJECT_ID }}
+          FIREBASE_STORAGE_BUCKET=${{ secrets.REACT_APP_FIREBASE_STORAGE_BUCKET }}
+          FIREBASE_APP_ID=${{ secrets.REACT_APP_FIREBASE_APP_ID }}
+          FIREBASE_BUCKET_URL=${{ secrets.REACT_APP_FIREBASE_BUCKET_URL }}
+          sed -i "s/REACT_APP_FIREBASE_KEY=xxx/REACT_APP_FIREBASE_KEY=$FIREBASE_KEY/g" Dockerfile
+          sed -i "s/REACT_APP_FIREBASE_DOMAIN=xxx/REACT_APP_FIREBASE_DOMAIN=$FIREBASE_DOMAIN/g" Dockerfile
+          sed -i "s/REACT_APP_FIREBASE_PROJECT_ID=xxx/REACT_APP_FIREBASE_PROJECT_ID=$FIREBASE_PROJECT_ID/g" Dockerfile
+          sed -i "s/REACT_APP_FIREBASE_STORAGE_BUCKET=xxx/REACT_APP_FIREBASE_STORAGE_BUCKET=$FIREBASE_STORAGE_BUCKET/g" Dockerfile
+          sed -i "s/REACT_APP_FIREBASE_APP_ID=xxx/REACT_APP_FIREBASE_APP_ID=$FIREBASE_APP_ID/g" Dockerfile
+          sed -i "s/REACT_APP_FIREBASE_BUCKET_URL=xxx/REACT_APP_FIREBASE_BUCKET_URL=$FIREBASE_BUCKET_URL/g" Dockerfile
 
       - name: Build, tag, and push image to Amazon ECR
         # if: env.changed == 'true'
