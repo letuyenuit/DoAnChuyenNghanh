@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "ZYVYEm6A0VuAPqzQEb9GKqaCtfupxQylghScKta6S6U=",
+  "Source": "netcore",
+  "BasePath": "_content/netcore",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "netcore\\wwwroot",
+      "Source": "netcore",
+      "ContentRoot": "C:\\Users\\LETUYEN\\Desktop\\DACN - Copy\\netcore\\wwwroot\\",
+      "BasePath": "_content/netcore",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\LETUYEN\\Desktop\\DACN - Copy\\netcore\\wwwroot\\js\\signalr\\dist\\browser\\signalr.js",
+      "SourceId": "netcore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LETUYEN\\Desktop\\DACN - Copy\\netcore\\wwwroot\\",
+      "BasePath": "_content/netcore",
+      "RelativePath": "js/signalr/dist/browser/signalr.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\browser\\signalr.js"
+    }
+  ]
+}

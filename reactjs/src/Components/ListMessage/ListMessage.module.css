@@ -1,0 +1,49 @@
+.eachMessageBox {
+  position: relative;
+  max-width: calc(100% - 40px);
+}
+.rowMessage {
+  width: 75%;
+  float: right;
+  justify-content: end;
+}
+.rowMessageOther {
+  width: 75%;
+  float: left;
+  justify-content: start;
+}
+.btnReply {
+  background-color: #fff;
+  border: none;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.replyOptionOwner {
+  display: none;
+  align-items: center;
+  justify-content: end;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 100%;
+  height: 100%;
+}
+.replyOptionOther {
+  display: none;
+  align-items: center;
+  justify-content: start;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 100%;
+  height: 100%;
+}
+#messageContent:hover .replyOptionOwner {
+  display: flex !important;
+}
+#messageContent:hover .replyOptionOther {
+  display: flex !important;
+}
+p {
+  text-align: start;
+}

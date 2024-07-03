@@ -1,0 +1,25 @@
+.btnMessage {
+  background-color: var(--secondary-button-background);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.hideText {
+  white-space: pre;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 12px;
+  max-width: 80px;
+}
+.hideTextBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

@@ -1,0 +1,118 @@
+#logregForms {
+  width: 500px;
+  margin: 10vh auto;
+  background-color: #f3f3f3;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+#logregForms > div {
+  width: 100%;
+  padding: 15px;
+  margin: auto;
+}
+#logregForms .formControl {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+#logregForms .formControl:focus {
+  z-index: 2;
+}
+#logregForms .formSignin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+#logregForms .formSignin input[type="password"] {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#logregForms .socialLogin {
+  margin-bottom: 14px;
+}
+#logregForms .socialBtn {
+  font-weight: 100;
+  color: white;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+#logregForms a {
+  display: block;
+  padding-top: 10px;
+  color: lightseagreen;
+}
+
+#logregForm .lines {
+  width: 200px;
+  border: 1px solid red;
+}
+
+#logregForms button[type="submit"] {
+  margin-top: 10px;
+}
+
+#logregForms .facebookBtn {
+  background-color: #3c589c;
+}
+
+#logregForms .googleBtn {
+  background-color: #df4b3b;
+}
+
+#logregForms .formReset,
+#logregForms .formSignup {
+  display: none;
+}
+
+#logregForms .formSignup .socialBtn {
+  width: 210px;
+}
+
+#logregForms .formSignup input {
+  margin-bottom: 2px;
+}
+
+.formSignup .socialLogin {
+  width: 210px !important;
+  margin: 0 auto;
+}
+.btn {
+  text-align: start;
+}
+/* Mobile */
+
+@media screen and (max-width: 500px) {
+  #logregForms {
+    width: 300px;
+  }
+
+  #logregForms .socialLogin {
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  #logregForms .socialBtn {
+    font-size: 1.3rem;
+    font-weight: 100;
+    color: white;
+    width: 200px;
+    height: 56px;
+  }
+  #logregForms .socialBtn:nth-child(1) {
+    margin-bottom: 5px;
+  }
+  #logregForms .socialBtn span {
+    display: none;
+  }
+  #logregForms .facebookBtn:after {
+    content: "Facebook";
+  }
+
+  #logregForms .googleBtn:after {
+    content: "Google+";
+  }
+}
