@@ -140,14 +140,15 @@ jobs:
         id: edit-firebase-config
         # if: env.changed == 'true'
         if: ${{ matrix.folder == 'reactjs' }}
+        env:
+          FIREBASE_KEY: ${{ secrets.REACT_APP_FIREBASE_KEY }}
+          FIREBASE_DOMAIN: ${{ secrets.REACT_APP_FIREBASE_DOMAIN }}
+          FIREBASE_PROJECT_ID: ${{ secrets.REACT_APP_FIREBASE_PROJECT_ID }}
+          FIREBASE_STORAGE_BUCKET: ${{ secrets.REACT_APP_FIREBASE_STORAGE_BUCKET }}
+          FIREBASE_APP_ID: ${{ secrets.REACT_APP_FIREBASE_APP_ID }}
+          FIREBASE_BUCKET_URL: ${{ secrets.REACT_APP_FIREBASE_BUCKET_URL }}
         run: |
           cd ${{ matrix.folder }}
-          FIREBASE_KEY=${{ secrets.REACT_APP_FIREBASE_KEY }}
-          FIREBASE_DOMAIN=${{ secrets.REACT_APP_FIREBASE_DOMAIN }}
-          FIREBASE_PROJECT_ID=${{ secrets.REACT_APP_FIREBASE_PROJECT_ID }}
-          FIREBASE_STORAGE_BUCKET=${{ secrets.REACT_APP_FIREBASE_STORAGE_BUCKET }}
-          FIREBASE_APP_ID=${{ secrets.REACT_APP_FIREBASE_APP_ID }}
-          FIREBASE_BUCKET_URL=${{ secrets.REACT_APP_FIREBASE_BUCKET_URL }}
           sed -i "s/REACT_APP_FIREBASE_KEY=xxx/REACT_APP_FIREBASE_KEY=$FIREBASE_KEY/g" Dockerfile
           sed -i "s/REACT_APP_FIREBASE_DOMAIN=xxx/REACT_APP_FIREBASE_DOMAIN=$FIREBASE_DOMAIN/g" Dockerfile
           sed -i "s/REACT_APP_FIREBASE_PROJECT_ID=xxx/REACT_APP_FIREBASE_PROJECT_ID=$FIREBASE_PROJECT_ID/g" Dockerfile
