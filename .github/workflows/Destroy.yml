@@ -40,7 +40,7 @@ jobs:
 
   Infrastructure_Destroy:
     name: Infrastructure_Destroy
-    needs: [Destroy_ECS]
+    # needs: [Destroy_ECS]
     runs-on: ubuntu-latest
     steps:
       - name: Code checkout
