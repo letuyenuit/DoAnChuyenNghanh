@@ -9,7 +9,9 @@ import SearchUser from "./Components/SearchUser/SearchUser";
 import { createContext, useEffect, useState } from "react";
 import VideoCall from "./Pages/VideoCall/VideoCall";
 import NewChat from "./Pages/NewChat";
-import io from "socket.io-client";
+// import io from "socket.io-client";
+import { io } from "socket.io-client";
+
 import Hello from "./Components/Hello";
 import EasyMasonryComponent from "./Components/Masonry";
 export const signalRContext = createContext(null);
@@ -18,7 +20,10 @@ function App() {
   const [socket, setSocket] = useState(null);
   useEffect(() => {
     try {
-      const conn = io("/socket/");
+      const conn = io({
+        path: "/socket/",
+      });
+      console.log(conn);
       // const conn = io(process.env.REACT_APP_SOCKET_SERVER_URL);
       setSocket(conn);
     } catch (err) {}

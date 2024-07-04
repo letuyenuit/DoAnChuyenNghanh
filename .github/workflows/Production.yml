@@ -159,10 +159,7 @@ jobs:
         id: edit-connection-sql-server
         # if: env.changed == 'true'
         if: ${{ matrix.folder == 'netcore' }}
-        env:
-          CONNECTION_STRING: ${{ secrets.CONNECTION_STRING }}
         run: |
-          echo $CONNECTION_STRING
           cd ${{ matrix.folder }}
           sed -i 's/"DefaultConnection":.*$/"DefaultConnection": ${{ secrets.CONNECTION_STRING }}/' appsettings.json
       - name: Setup .NET Core
