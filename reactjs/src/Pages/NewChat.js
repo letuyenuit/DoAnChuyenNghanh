@@ -18,7 +18,7 @@ const NewChat = () => {
         exceptIds: tags.map((el) => el.id),
       };
       axiosInstance
-        .post(`/api/user/get-user-by-name?name=${searchText.trim()}`, {
+        .post(`/user/get-user-by-name?name=${searchText.trim()}`, {
           exceptIds: tags.map((el) => el.id),
         })
         .then((res) => setUsers(res.data.users))
@@ -30,7 +30,7 @@ const NewChat = () => {
   const handleGetMessageByids = () => {
     try {
       axiosInstance
-        .post(`/api/chat/get-message-by-ids?skip=1`, {
+        .post(`/chat/get-message-by-ids?skip=1`, {
           exceptIds: tags.map((el) => el.id),
         })
         .then((res) => {

@@ -42,7 +42,7 @@ const AudioRecord = ({ setShowRecordAudio, socket }) => {
       formData.append("chatId", id);
 
       axiosInstance
-        .post("/api/chat/send-message", formData)
+        .post("/chat/send-message", formData)
         .then(async (res) => {
           socket.emit("sendMessage", {
             room: res.data.chatId,

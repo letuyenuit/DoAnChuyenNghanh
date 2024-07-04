@@ -64,7 +64,7 @@ const ChatFooter = ({ ids, reply, setReply }) => {
         formData.append("idReplyMessage", reply.id);
       }
       axiosInstance
-        .post("/api/chat/send-message", formData)
+        .post("/chat/send-message", formData)
         .then(async (res) => {
           socket.emit("sendMessage", {
             room: res.data.chatId,
@@ -89,7 +89,7 @@ const ChatFooter = ({ ids, reply, setReply }) => {
         formData.append("idReplyMessage", reply.id);
       }
       axiosInstance
-        .post("/api/chat/send-message-new-chat", formData)
+        .post("/chat/send-message-new-chat", formData)
         .then(async (res) => {
           socket.emit("join_room_chat", {
             room: res.data.chatId,

@@ -14,3 +14,7 @@ module "ecs" {
   source = "./ecs-cluster"
 }
 
+module "sqlserver" {
+  source = "./sqlserver"
+}
+

@@ -7,7 +7,7 @@ const SearchUser = () => {
   const handleGetUserByName = async (searchText) => {
     try {
       axiosInstance
-        .get(`/api/user/get-user-by-name?name=${searchText}`)
+        .get(`/user/get-user-by-name?name=${searchText}`)
         .then((res) => setUsers(res.data.users))
         .catch((err) => console.log(err));
     } catch (err) {

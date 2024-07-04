@@ -1,6 +1,5 @@
 import axiosInstance from "../../axios/axiosInstance";
 import { LOG_IN, LOG_OUT, SIGN_UP } from "../actionType";
-import axios from "axios";
 const initialState = {
   type: null,
   token: localStorage.getItem("token") ? localStorage.getItem("token") : null,
@@ -55,7 +54,7 @@ export const login = (type, user, token) => {
 export const signup = (name, email, password) => {
   return async function (dispatch, getState) {
     try {
-      const res = await axiosInstance.post("/api/auth/signup", {
+      const res = await axiosInstance.post("/auth/signup", {
         name: name,
         email: email,
         password: password,

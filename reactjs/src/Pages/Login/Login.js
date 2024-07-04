@@ -13,7 +13,7 @@ const Login = () => {
   const navigate = useNavigate();
   const handleLogin = async (email, password) => {
     try {
-      const res = await axiosInstance.post("/api/auth/login", {
+      const res = await axiosInstance.post("/auth/login", {
         email: email,
         password: password,
       });

@@ -11,7 +11,7 @@ const ListChat = () => {
   const [chats, setChats] = useState([]);
   const handleFetchChat = async () => {
     try {
-      axiosInstance.get("/api/chat/get-all-chat").then((res) => {
+      axiosInstance.get("/chat/get-all-chat").then((res) => {
         setChats(res.data.chats);
       });
     } catch (err) {

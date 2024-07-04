@@ -21,7 +21,7 @@ const DetailChat = () => {
   const handleFetchMessage = (id) => {
     try {
       axiosInstance
-        .get(`/api/chat/get-chat-by-id?id=${id}&skip=1`)
+        .get(`/chat/get-chat-by-id?id=${id}&skip=1`)
         .then((res) => {
           if (res.data) {
             setMessages(res.data.messages);
