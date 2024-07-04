@@ -6,10 +6,10 @@ module "iam" {
   source = "./../iam"
 }
 data "aws_rds_orderable_db_instance" "custom-sqlserver" {
-  engine                     = "sqlserver-ee"
+  engine                     = "sqlserver-ex"
   engine_version             = "15.00.4375.4.v1"
   storage_type               = "gp3"
-  preferred_instance_classes = "db.t3.micro"
+  preferred_instance_classes = ["db.t3.micro"]
 }
 resource "aws_kms_key" "key_id_sqlserver" {
   description = "Key for SQL Server"
