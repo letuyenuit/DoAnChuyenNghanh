@@ -28,7 +28,6 @@ resource "aws_db_instance" "default_mssql" {
   engine_version         = "15.00.4375.4.v1"
   instance_class         = "db.t3.micro"
   multi_az               = false
-  db_name                = "sqlserver-chat-db"
   username               = "chatdb"
   password               = "admin1234"
   vpc_security_group_ids = ["${aws_security_group.rds_mssql_security_group.id}"]
