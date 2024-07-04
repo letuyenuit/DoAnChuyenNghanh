@@ -32,6 +32,7 @@ resource "aws_db_instance" "default_mssql" {
   password               = "admin1234"
   vpc_security_group_ids = ["${aws_security_group.rds_mssql_security_group.id}"]
   db_subnet_group_name   = aws_db_subnet_group.default_rds_mssql.id
+  skip_final_snapshot    = true
 }
 
 
