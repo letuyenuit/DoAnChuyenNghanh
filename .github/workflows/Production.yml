@@ -164,7 +164,7 @@ jobs:
         run: |
           echo $CONNECTION_STRING
           cd ${{ matrix.folder }}
-          sed -i 's/"DefaultConnection":.*$/"DefaultConnection":"$CONNECTION_STRING"/' appsettings.json
+          sed -i 's/"DefaultConnection":.*$/"DefaultConnection": ${{ secrets.CONNECTION_STRING }}/' appsettings.json
       - name: Setup .NET Core
         uses: actions/setup-dotnet@v4
         with:
