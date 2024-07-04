@@ -5,7 +5,7 @@ module "vpc" {
 resource "aws_db_subnet_group" "default_rds_mssql" {
   name        = "rds-mssql-subnet-group"
   description = "Subnet group for rds-mssql private subnet group."
-  subnet_ids  = module.vpc.private_subnets
+  subnet_ids  = module.vpc.public_subnets
 }
 
 resource "aws_security_group" "rds_mssql_security_group" {
