@@ -89,111 +89,121 @@ jobs:
           terraform -chdir=iac init
           terraform -chdir=iac apply -auto-approve
 
-  # Build_Publish_Image:
-  #   needs: [Infrastructure_Apply]
-  #   name: Build_Publish
-  #   runs-on: ubuntu-latest
-  #   strategy:
-  #     matrix:
-  #       folder: ["reactjs", "netcore", "nodejs"]
-  #   outputs:
-  #     run_job: ${{ steps.check_files.outputs.run_job }}
-  #   steps:
-  #     - name: Checkout code
-  #       uses: actions/checkout@v4
-  #       with:
-  #         fetch-depth: 2
+  Build_Publish_Image:
+    needs: [Infrastructure_Apply]
+    name: Build_Publish
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        folder: ["reactjs", "netcore", "nodejs"]
+    outputs:
+      run_job: ${{ steps.check_files.outputs.run_job }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
-  #     - name: Check modified files
-  #       id: check_files
-  #       run: |
-  #         echo "=============== list modified files ==============="
-  #         git diff --name-only HEAD^ HEAD
+      - name: Check modified files
+        id: check_files
+        run: |
+          echo "=============== list modified files ==============="
+          git diff --name-only HEAD^ HEAD
 
-  #         echo "========== check paths of modified files =========="
-  #         git diff --name-only HEAD^ HEAD > files.txt
-  #         changed=false
-  #         while IFS= read -r file
-  #         do
-  #           echo $file
-  #           if [[ $file == ${{ matrix.folder }}/* ]]; then
-  #             changed=true
-  #             break
-  #           fi
-  #         done < files.txt
-  #         echo "changed=$changed" >> $GITHUB_ENV
+          echo "========== check paths of modified files =========="
+          git diff --name-only HEAD^ HEAD > files.txt
+          changed=false
+          while IFS= read -r file
+          do
+            echo $file
+            if [[ $file == ${{ matrix.folder }}/* ]]; then
+              changed=true
+              break
+            fi
+          done < files.txt
+          echo "changed=$changed" >> $GITHUB_ENV
 
-  #     - name: Configure AWS credentials
-  #       # if: env.changed == 'true'
-  #       uses: aws-actions/configure-aws-credentials@0e613a0980cbf65ed5b322eb7a1e075d28913a83
-  #       with:
-  #         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-  #         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-  #         aws-region: ${{ env.AWS_REGION }}
+      - name: Configure AWS credentials
+        # if: env.changed == 'true'
+        uses: aws-actions/configure-aws-credentials@0e613a0980cbf65ed5b322eb7a1e075d28913a83
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
 
-  #     - name: Login to Amazon ECR
-  #       # if: env.changed == 'true'
-  #       id: login-ecr
-  #       uses: aws-actions/amazon-ecr-login@62f4f872db3836360b72999f4b87f1ff13310f3a
+      - name: Login to Amazon ECR
+        # if: env.changed == 'true'
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@62f4f872db3836360b72999f4b87f1ff13310f3a
 
-  #     - name: Edit firebase config
-  #       id: edit-firebase-config
-  #       # if: env.changed == 'true'
-  #       if: ${{ matrix.folder == 'reactjs' }}
-  #       env:
-  #         FIREBASE_KEY: ${{ secrets.REACT_APP_FIREBASE_KEY }}
-  #         FIREBASE_DOMAIN: ${{ secrets.REACT_APP_FIREBASE_DOMAIN }}
-  #         FIREBASE_PROJECT_ID: ${{ secrets.REACT_APP_FIREBASE_PROJECT_ID }}
-  #         FIREBASE_STORAGE_BUCKET: ${{ secrets.REACT_APP_FIREBASE_STORAGE_BUCKET }}
-  #         FIREBASE_APP_ID: ${{ secrets.REACT_APP_FIREBASE_APP_ID }}
-  #         FIREBASE_BUCKET_URL: ${{ secrets.REACT_APP_FIREBASE_BUCKET_URL }}
-  #       run: |
-  #         cd ${{ matrix.folder }}
-  #         sed -i 's/REACT_APP_FIREBASE_KEY=xxx/REACT_APP_FIREBASE_KEY=$FIREBASE_KEY/g' Dockerfile
-  #         sed -i 's/REACT_APP_FIREBASE_DOMAIN=xxx/REACT_APP_FIREBASE_DOMAIN=$FIREBASE_DOMAIN/g' Dockerfile
-  #         sed -i 's/REACT_APP_FIREBASE_PROJECT_ID=xxx/REACT_APP_FIREBASE_PROJECT_ID=$FIREBASE_PROJECT_ID/g' Dockerfile
-  #         sed -i 's/REACT_APP_FIREBASE_STORAGE_BUCKET=xxx/REACT_APP_FIREBASE_STORAGE_BUCKET=$FIREBASE_STORAGE_BUCKET/g' Dockerfile
-  #         sed -i 's/REACT_APP_FIREBASE_APP_ID=xxx/REACT_APP_FIREBASE_APP_ID=$FIREBASE_APP_ID/g' Dockerfile
-  #         sed -i 's/REACT_APP_FIREBASE_BUCKET_URL=xxx/REACT_APP_FIREBASE_BUCKET_URL=$FIREBASE_BUCKET_URL/g' Dockerfile
+      - name: Edit firebase config
+        id: edit-firebase-config
+        # if: env.changed == 'true'
+        if: ${{ matrix.folder == 'reactjs' }}
+        env:
+          FIREBASE_KEY: ${{ secrets.REACT_APP_FIREBASE_KEY }}
+          FIREBASE_DOMAIN: ${{ secrets.REACT_APP_FIREBASE_DOMAIN }}
+          FIREBASE_PROJECT_ID: ${{ secrets.REACT_APP_FIREBASE_PROJECT_ID }}
+          FIREBASE_STORAGE_BUCKET: ${{ secrets.REACT_APP_FIREBASE_STORAGE_BUCKET }}
+          FIREBASE_APP_ID: ${{ secrets.REACT_APP_FIREBASE_APP_ID }}
+          FIREBASE_BUCKET_URL: ${{ secrets.REACT_APP_FIREBASE_BUCKET_URL }}
+        run: |
+          cd ${{ matrix.folder }}
+          sed -i 's/REACT_APP_FIREBASE_KEY=xxx/REACT_APP_FIREBASE_KEY=$FIREBASE_KEY/g' Dockerfile
+          sed -i 's/REACT_APP_FIREBASE_DOMAIN=xxx/REACT_APP_FIREBASE_DOMAIN=$FIREBASE_DOMAIN/g' Dockerfile
+          sed -i 's/REACT_APP_FIREBASE_PROJECT_ID=xxx/REACT_APP_FIREBASE_PROJECT_ID=$FIREBASE_PROJECT_ID/g' Dockerfile
+          sed -i 's/REACT_APP_FIREBASE_STORAGE_BUCKET=xxx/REACT_APP_FIREBASE_STORAGE_BUCKET=$FIREBASE_STORAGE_BUCKET/g' Dockerfile
+          sed -i 's/REACT_APP_FIREBASE_APP_ID=xxx/REACT_APP_FIREBASE_APP_ID=$FIREBASE_APP_ID/g' Dockerfile
+          sed -i 's/REACT_APP_FIREBASE_BUCKET_URL=xxx/REACT_APP_FIREBASE_BUCKET_URL=$FIREBASE_BUCKET_URL/g' Dockerfile
+      - name: Edit Connection sql server
+        id: edit-connection-sql-server
+        # if: env.changed == 'true'
+        if: ${{ matrix.folder == 'netcore' }}
+        env:
+          ENDPOINT_SQLSERVER: ${{ secrets.ENDPOINT_SQLSERVER }}
+          DB_USER: ${{ secrets.DB_USER }}
+          DB_PASS: ${{ secrets.DB_PASS }}
+        run: |
+          cd ${{ matrix.folder }}
+          sed -i 's/Server=DESKTOP-KF894FS;Database=ChatAppSystem;Trusted_Connection=True;TrustServerCertificate=True/Server=${{ env.ENDPOINT_SQLSERVER }};Database=sqlserver-chat-db;User Id=${{ env.DB_USER }};Password=${{ env.DB_PASS }};TrustServerCertificate=True/' appsettings.json
+      - name: Build, tag, and push image to Amazon ECR
+        # if: env.changed == 'true'
+        id: build-image
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          IMAGE_TAG: ${{ github.sha }}
+        run: |
+          cd ${{ matrix.folder }}
+          docker build -t $ECR_REGISTRY/${{matrix.folder}}:$IMAGE_TAG .
+          docker push $ECR_REGISTRY/${{matrix.folder}}:$IMAGE_TAG
+          echo "image=$ECR_REGISTRY/${{matrix.folder}}:$IMAGE_TAG" >> $GITHUB_OUTPUT
 
-  #     - name: Build, tag, and push image to Amazon ECR
-  #       # if: env.changed == 'true'
-  #       id: build-image
-  #       env:
-  #         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-  #         IMAGE_TAG: ${{ github.sha }}
-  #       run: |
-  #         cd ${{ matrix.folder }}
-  #         docker build -t $ECR_REGISTRY/${{matrix.folder}}:$IMAGE_TAG .
-  #         docker push $ECR_REGISTRY/${{matrix.folder}}:$IMAGE_TAG
-  #         echo "image=$ECR_REGISTRY/${{matrix.folder}}:$IMAGE_TAG" >> $GITHUB_OUTPUT
+  Deploy_ECS:
+    name: Deploy_ECS
+    needs: [Build_Publish_Image]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Code checkout
+        uses: actions/checkout@v4
 
-  # Deploy_ECS:
-  #   name: Deploy_ECS
-  #   needs: [Build_Publish_Image]
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Code checkout
-  #       uses: actions/checkout@v4
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
-  #     - name: Setup Terraform
-  #       uses: hashicorp/setup-terraform@v3
-  #       with:
-  #         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@0e613a0980cbf65ed5b322eb7a1e075d28913a83
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
 
-  #     - name: Configure AWS credentials
-  #       uses: aws-actions/configure-aws-credentials@0e613a0980cbf65ed5b322eb7a1e075d28913a83
-  #       with:
-  #         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-  #         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-  #         aws-region: ${{ env.AWS_REGION }}
+      - name: PWD
+        run: |
+          ls -al
+          pwd
 
-  #     - name: PWD
-  #       run: |
-  #         ls -al
-  #         pwd
-
-  #     - name: Terraform Apply ECS service
-  #       run: |
-  #         terraform -chdir=deployment init
-  #         terraform -chdir=deployment apply -auto-approve
+      - name: Terraform Apply ECS service
+        run: |
+          terraform -chdir=deployment init
+          terraform -chdir=deployment apply -auto-approve

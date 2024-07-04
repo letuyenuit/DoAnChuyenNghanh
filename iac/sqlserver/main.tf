@@ -2,9 +2,6 @@ module "vpc" {
   source = "./../vpc"
 }
 
-module "iam" {
-  source = "./../iam"
-}
 resource "aws_db_subnet_group" "default_rds_mssql" {
   name        = "rds-mssql-subnet-group"
   description = "Subnet group for rds-mssql private subnet group."
@@ -33,7 +30,7 @@ resource "aws_db_instance" "default_mssql" {
   instance_class          = "db.t3.micro"
   multi_az                = false
   username                = "chatdb"
-  password                = "admin1234@11"
+  password                = "admin1234"
   vpc_security_group_ids  = ["${aws_security_group.rds_mssql_security_group.id}"]
   db_subnet_group_name    = aws_db_subnet_group.default_rds_mssql.id
   backup_retention_period = 3
