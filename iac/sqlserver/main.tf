@@ -5,52 +5,38 @@ module "vpc" {
 module "iam" {
   source = "./../iam"
 }
-data "aws_rds_orderable_db_instance" "custom-sqlserver" {
-  engine                     = "sqlserver-ex"
-  engine_version             = "15.00.4375.4.v1"
-  storage_type               = "gp3"
-  preferred_instance_classes = ["db.t3.micro"]
-}
-resource "aws_kms_key" "key_id_sqlserver" {
-  description = "Key for SQL Server"
-}
-data "aws_kms_key" "by_id" {
-  key_id = aws_kms_key.key_id_sqlserver.key_id
+resource "aws_db_subnet_group" "default_rds_mssql" {
+  name        = "rds-mssql-subnet-group"
+  description = "Subnet group for rds-mssql private subnet group."
+  subnet_ids  = module.vpc.private_subnets
 }
 
-resource "aws_iam_instance_profile" "instance_profile" {
-  name = "AWSRDSCustomSQLServerInstanceProfile"
-  role = module.iam.RDSCustomSQLServerInstanceProfileRole
-}
+resource "aws_security_group" "rds_mssql_security_group" {
+  name        = "all-rds-mssql-internal"
+  description = "allow all vpc traffic to rds mssql."
+  vpc_id      = module.vpc.vpc_id
 
-resource "aws_db_subnet_group" "rdssubnetgroup" {
-  name       = "rdssubnetgroup"
-  subnet_ids = module.vpc.private_subnets
-  tags = {
-    Name = "RDS subnet group"
+  ingress {
+    from_port = 1433
+    to_port   = 1433
+    protocol  = "tcp"
   }
 }
 
-resource "aws_db_instance" "example" {
-  allocated_storage           = 20
-  auto_minor_version_upgrade  = false
-  custom_iam_instance_profile = aws_iam_instance_profile.instance_profile.name
-  backup_retention_period     = 7
-  vpc_security_group_ids      = [aws_security_group.rds_mssql_security_group.id]
-  db_subnet_group_name        = aws_db_subnet_group.rdssubnetgroup.name
-  engine                      = data.aws_rds_orderable_db_instance.custom-sqlserver.engine
-  engine_version              = data.aws_rds_orderable_db_instance.custom-sqlserver.engine_version
-  identifier                  = "chat-db-mssql"
-  instance_class              = data.aws_rds_orderable_db_instance.custom-sqlserver.instance_class
-  kms_key_id                  = data.aws_kms_key.by_id.arn
-  multi_az                    = false
-  password                    = "admin1234@11"
-  storage_encrypted           = true
-  username                    = "chatdb"
-
-  timeouts {
-    create = "3h"
-    delete = "3h"
-    update = "3h"
-  }
+resource "aws_db_instance" "default_mssql" {
+  identifier              = "sqlserver-chat-db"
+  allocated_storage       = 20
+  license_model           = "license-included"
+  storage_type            = "gp3"
+  engine                  = "sqlserver-ex"
+  engine_version          = "15.00.4375.4.v1"
+  instance_class          = "db.t3.micro"
+  multi_az                = false
+  username                = "chatdb"
+  password                = "admin1234@11"
+  vpc_security_group_ids  = ["${aws_security_group.rds_mssql_security_group.id}"]
+  db_subnet_group_name    = aws_db_subnet_group.default_rds_mssql.id
+  backup_retention_period = 3
 }
+
+
