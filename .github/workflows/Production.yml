@@ -162,6 +162,7 @@ jobs:
         env:
           CONNECTION_STRING: ${{ secrets.CONNECTION_STRING }}
         run: |
+          echo $CONNECTION_STRING
           cd ${{ matrix.folder }}
           sed -i 's/"DefaultConnection":.*$/"DefaultConnection":"$CONNECTION_STRING"/' appsettings.json
       - name: Setup .NET Core
