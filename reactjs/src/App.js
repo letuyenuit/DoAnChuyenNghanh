@@ -18,8 +18,8 @@ function App() {
   const [socket, setSocket] = useState(null);
   useEffect(() => {
     try {
-      // const conn = io("/socket/");
-      const conn = io(process.env.REACT_APP_SOCKET_SERVER_URL);
+      const conn = io("/socket/");
+      // const conn = io(process.env.REACT_APP_SOCKET_SERVER_URL);
       setSocket(conn);
     } catch (err) {}
   }, []);
