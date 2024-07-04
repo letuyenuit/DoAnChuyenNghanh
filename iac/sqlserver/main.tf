@@ -36,6 +36,7 @@ resource "aws_db_instance" "example" {
   auto_minor_version_upgrade  = false
   custom_iam_instance_profile = aws_iam_instance_profile.instance_profile.name
   backup_retention_period     = 7
+  vpc_security_group_ids      = [aws_security_group.rds_mssql_security_group.id]
   db_subnet_group_name        = aws_db_subnet_group.rdssubnetgroup.name
   engine                      = data.aws_rds_orderable_db_instance.custom-sqlserver.engine
   engine_version              = data.aws_rds_orderable_db_instance.custom-sqlserver.engine_version
