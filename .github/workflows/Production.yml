@@ -160,13 +160,10 @@ jobs:
         # if: env.changed == 'true'
         if: ${{ matrix.folder == 'netcore' }}
         env:
-          ENDPOINT_SQLSERVER: ${{ secrets.ENDPOINT_SQLSERVER }}
-          DB_USER: ${{ secrets.DB_USER }}
-          DB_PASS: ${{ secrets.DB_PASS }}
+          CONNECTION_STRING: ${{ secrets.CONNECTION_STRING }}
         run: |
           cd ${{ matrix.folder }}
-          sed -i 's/Server=DESKTOP-KF894FS;Database=ChatAppSystem;Trusted_Connection=True;TrustServerCertificate=True/Server=${{ env.ENDPOINT_SQLSERVER }};Database=sqlserver-chat-db;User Id=${{ env.DB_USER }};Password=${{ env.DB_PASS }};TrustServerCertificate=True/' appsettings.json
-          rm -rf Migrations
+          sed -i 's/"DefaultConnection":.*$/"DefaultConnection":"$CONNECTION_STRING"/' appsettings.json
       - name: Setup .NET Core
         uses: actions/setup-dotnet@v4
         with:
@@ -181,7 +178,6 @@ jobs:
         if: ${{ matrix.folder == 'netcore' }}
         run: |
           cd ${{ matrix.folder }}
-          dotnet-ef migrations add InitialCreate
           dotnet-ef database update
 
       - name: Build, tag, and push image to Amazon ECR
